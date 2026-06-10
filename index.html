@@ -461,18 +461,12 @@
         </svg>
       </div>
       <div class="conn-name" style="cursor:pointer;" onclick="openConnModal('ilia-codebase')">ILIA Local Studio <span style="font-size:11px;font-weight:500;color:var(--blue-mid);">(A personal Brad on your computer)</span> <span style="font-size:10px;opacity:0.6;">ⓘ</span></div>
-      <div class="conn-desc">Backend + frontend repos — unlocks full code-aware AI assistance</div>
-      <span class="conn-status cs-pending">⏳ Pending Mirror</span>
+      <div class="conn-desc">ILIA running on your personal machine — pull the latest codebase from GitHub, describe a change in plain English, Claude builds it, and you see it live in your browser. Your private sandbox connected to real ILIA code.</div>
+      <span class="conn-status cs-pending">⏳ Pending: Codebase Mirror + Node.js (IT Admin)</span>
       <a class="conn-link" href="https://github.com/NIWCompanies-ILIA-Central-Intelligence/ilia-backend" target="_blank">GitHub Repo →</a>
     </div>
 
-    <div class="conn-card conn-pending">
-      <div class="conn-icon" style="cursor:pointer;" onclick="openConnModal('local-dev')" title="Click to learn more">🖥️</div>
-      <div class="conn-name" style="cursor:pointer;color:var(--blue-mid);" onclick="openConnModal('local-dev')">Local Dev Environment <span style="font-size:10px;opacity:0.6;">ⓘ</span></div>
-      <div class="conn-desc">ILIA running locally on Jamin's machine for live UI/UX prototyping</div>
-      <span class="conn-status cs-pending">⏳ Pending IT Admin</span>
-      <a class="conn-link" href="https://simplicitygh.atlassian.net/jira" target="_blank">Track in JIRA →</a>
-    </div>
+    
 
     <div class="conn-card conn-waiting">
       <div class="conn-icon" style="cursor:pointer;" onclick="openConnModal('claude-team')" title="Click to learn more">👥</div>
@@ -1187,7 +1181,7 @@
     "gmail":          {t:"Gmail",                  s:"Connected",         sc:"green",  d:"Work inbox connected. Claude can read context from emails and create drafts. Cannot send emails — drafts only, you always review first.", caps:["Draft reply emails for your review","Summarize email threads for context","Draft outreach emails to agents or carriers","Create email templates for operational workflows","CANNOT send emails — drafts only"], lnks:[["Open Gmail","https://mail.google.com"]]},
     "bitbucket-mirror":{t:"Bitbucket Mirror",      s:"Token Confirmed — Mirror Pending", sc:"amber", d:"One-way auto-sync from Bitbucket (source of truth) to GitHub. Once live, Claude gains full read access to the ILIA codebase.", caps:["Read all ILIA business logic and API endpoints","Extract complete workflow map from route definitions","Identify every email trigger in the system","Audit formulas and calculations"], lnks:[["JIRA: NIWD-1734","https://simplicitygh.atlassian.net/browse/NIWD-1734"]]},
     "ilia-codebase":  {t:"ILIA Local Studio",          s:"Pending Mirror",    sc:"amber",  d:"Your personal ILIA development environment running on your own machine. Pull the latest codebase, describe a change in plain English, Claude builds it, and you see it live in your browser instantly — your own private sandbox.", caps:["Complete workflow extraction from all routes","Full formula and calculation audit","Email system inventory","Database schema and relationship mapping","API endpoint documentation generation"], lnks:[["GitHub Backend","https://github.com/NIWCompanies-ILIA-Central-Intelligence/ilia-backend"]]},
-    "local-dev":      {t:"Local Dev Environment",  s:"Pending IT Admin",  sc:"amber",  d:"ILIA running locally enables a real-time PM prototyping workflow. Describe a UI change in plain English, Claude writes the code, you see it live.", caps:["Describe UI changes in plain English — Claude codes them","See ILIA update live in your browser instantly","Prototype new screens without developer bottleneck","Hand finished prototypes to developers as working code"], lnks:[["Track in JIRA","https://simplicitygh.atlassian.net/jira"]]},
+    "local-dev":      {t:"Local Dev Environment",  s:"Pending IT Admin",  sc:"amber",  d:"ILIA running locally enables a real-time PM prototyping workflow. Describe a UI change in plain English, Claude writes the code, you see it live.", caps:["Pull latest ILIA codebase with one git pull — always on newest code","Describe UI or logic changes in plain English — Claude builds them live","See ILIA update in your browser instantly — your private sandbox","Test full end-to-end workflows against real data","Hand finished working code directly to Mohit for production","Connected to GitHub mirror — auto-updated every time devs ship"], lnks:[["Track in JIRA","https://simplicitygh.atlassian.net/jira"]]},
     "claude-team":    {t:"Claude Team Plan",       s:"Active — Simplicity Group", sc:"green", d:"Simplicity Group Claude Team plan is active. The ILIA Central Intelligence project is shared with you and Kyle.", caps:["Share projects across NIW team members","Shared context and connectors for all project members","Upload knowledge files visible to all members","Kyle connected — more team members can be added"], lnks:[["Claude Settings","https://claude.ai/settings"]]},
     "shared-drive":   {t:"Shared NIW Drive",       s:"Planned",           sc:"muted",  d:"A dedicated Google Shared Drive for ILIA Central Intelligence — separate from all company drives containing sensitive data.", caps:["Host ILIA Master Context and architecture docs","Store living SOPs and workflow documentation","Safely connect to Claude without exposing client data"], lnks:[["Google Drive","https://drive.google.com"]]},
     "claude-chrome":  {t:"Claude in Chrome",       s:"Connected",         sc:"green",  d:"Browser automation — Claude can see your screen, navigate pages, click buttons, and interact with web apps.", caps:["Navigate to any URL and take actions on your behalf","Interact with ILIA admin interface directly","Screenshot and analyze any web page"], lnks:[["Chrome Web Store","https://chromewebstore.google.com/search/claude"]]},
